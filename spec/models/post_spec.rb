@@ -1,5 +1,10 @@
 require 'spec_helper'
 
 describe Post do
-  pending "add some examples to (or delete) #{__FILE__}"
+
+  it '#add' do 
+    post = Post.new
+    post.add(1, 1).should == 2
+  end
+
 end
